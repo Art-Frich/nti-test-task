@@ -1,5 +1,6 @@
 @import url(my-reset.css);
 @import url(normalize.css);
+@import url(../assets/fonts/Euclid_Circular_A/stylesheet.css);
 @import url(variables.css);
 @import url(mixes.css);
 

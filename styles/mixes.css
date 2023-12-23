@@ -1,0 +1,70 @@
+.link {
+  transition: opacity 0.2s linear;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.link:active {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.btn {
+  transition: opacity 0.2s linear scale 0.1s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  scale: 0.99;
+}
+
+.font-h1 {
+  font-weight: 500;
+  font-size: 70px;
+}
+
+.font-h2 {
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.font-h3 {
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.font-h4 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.font-20 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.font-18 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  font-style: normal;
+  color: var(--white);
+}
+
+.font-16 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  font-style: normal;
+  color: var(--black);
+}
+
+.small-text {
+  font-weight: 500;
+  font-size: 14px;
+}

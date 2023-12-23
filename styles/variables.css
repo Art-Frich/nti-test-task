@@ -1,13 +1,11 @@
 :root {
+  font-family: Euclid Circular A, Arial, Helvetica, sans-serif;
+
   --padding-layout: calc((100vw - 1560px) / 2);
 
   --grey: #f4f6f8;
   --pink: #e50e78;
   --white: #fff;
+  --blace: #3b3c40;
+  --dark-grey: #9293b0;
 }
-/*
-@media screen and (max-width: 1560px) {
-  :root{
-    --padding:
-  }
-} */

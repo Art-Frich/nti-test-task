@@ -16,6 +16,7 @@
 
 .header__line_second {
   padding: 15px var(--padding-layout);
+  justify-content: center;
 }
 
 .header__line_third {
@@ -69,6 +70,7 @@
 
 .header__searcher-input {
   min-width: 120px;
+  color: var(--dark-grey);
 }
 
 /* Кнопки */
@@ -157,7 +159,6 @@
   align-items: center;
 
   color: var(--white);
-  font-family: Euclid Circular A;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
