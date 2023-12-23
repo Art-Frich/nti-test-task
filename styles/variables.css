@@ -1,0 +1,13 @@
+:root {
+  --padding-layout: calc((100vw - 1560px) / 2);
+
+  --grey: #f4f6f8;
+  --pink: #e50e78;
+  --white: #fff;
+}
+/*
+@media screen and (max-width: 1560px) {
+  :root{
+    --padding:
+  }
+} */

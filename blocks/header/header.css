@@ -1,0 +1,232 @@
+.header {
+}
+
+/* Линии */
+.header__line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.header__line_first {
+  padding: 12px var(--padding-layout);
+  background-color: var(--grey);
+}
+
+.header__line_second {
+  padding: 15px var(--padding-layout);
+}
+
+.header__line_third {
+  padding: 0 var(--padding-layout) 20px;
+  align-items: flex-start;
+}
+
+/* группы */
+.header__group-geo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__group-links1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__group-links2 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__group-links3 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__group-links3-element {
+  display: block;
+  padding: 13px 24px;
+  border-radius: 15px;
+  background-color: var(--grey);
+}
+
+.header__searcher {
+  padding: 5px 5px 5px 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 4;
+
+  border-radius: 15px;
+  border: 1px solid var(--pink);
+}
+
+.header__searcher-input {
+  min-width: 120px;
+}
+
+/* Кнопки */
+.header__btn-geo {
+}
+
+.header__searcher-btn {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 10px;
+  background-image: url(../../assets/icons/header-icon/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  background-color: var(--pink);
+}
+
+.header__btn-catalog {
+  min-height: 60px;
+  padding: 5px 5px 5px 20px;
+  border-radius: 15px;
+  background: var(--pink);
+}
+
+.header__btn-catalog-text {
+  display: flex;
+  align-items: center;
+}
+
+.header__btn-catalog-text::after {
+  content: "";
+  margin-left: 13px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../../assets/icons/header-icon/list-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.header__btn-phone {
+  border-radius: 15px;
+  padding: 13px 24px;
+  background: var(--pink);
+
+  /* shadow */
+  box-shadow: 10px 15px 50px 0px rgba(173, 178, 201, 0.2);
+}
+
+/* текст */
+.header__text-with-icon {
+  display: flex;
+  align-items: center;
+}
+
+.header__text-with-icon_column {
+  flex-direction: column;
+  position: relative;
+}
+
+.header__text-with-icon::before {
+  content: "";
+  margin-right: 5px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.header__text-with-icon_column::after {
+  position: absolute;
+  /* 50% - a - b, a - размер блока, b - смещение от центра */
+  right: calc(50% - 22px - 4px);
+
+  width: 22px;
+  height: 22px;
+  background-color: var(--pink);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--white);
+  font-family: Euclid Circular A;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 19.6px */
+}
+
+.header__text-with-icon_location::before {
+  background-image: url(../../assets/icons/header-icon/location-icon.svg);
+}
+
+.header__text-with-icon_email::before {
+  background-image: url(../../assets/icons/header-icon/email-icon.svg);
+}
+
+.header__text-with-icon_profile::before {
+  background-image: url(../../assets/icons/header-icon/profile-icon.svg);
+}
+
+.header__text-with-icon_favorite::before {
+  background-image: url(../../assets/icons/header-icon/favorite-icon.svg);
+}
+
+.header__text-with-icon_favorite::after {
+  content: "7";
+}
+
+.header__text-with-icon_basket::before {
+  background-image: url(../../assets/icons/header-icon/basket-icon.svg);
+}
+
+.header__text-with-icon_basket::after {
+  content: "4";
+}
+
+.header__text-with-icon_flame::before {
+  background-image: url(../../assets/icons/header-icon/flame-icon.svg);
+}
+
+.header__text-with-icon_lable::before {
+  background-image: url(../../assets/icons/header-icon/lable-icon.svg);
+}
+
+.header__text-with-icon_diamond::before {
+  background-image: url(../../assets/icons/header-icon/diamond-icon.svg);
+}
+
+.header__text-with-icon_payment::before {
+  background-image: url(../../assets/icons/header-icon/payment-icon.svg);
+}
+
+.header__text-with-icon_color::before {
+  background-image: url(../../assets/icons/header-icon/color-icon.svg);
+}
+
+.header__text-with-icon_megaphone::before {
+  background-image: url(../../assets/icons/header-icon/megaphone-icon.svg);
+}
+
+.header__text-with-icon_phone::before {
+  background-image: url(../../assets/icons/header-icon/phone-icon.svg);
+}
+
+.header__link {
+  /* стили для общих свойств ссылок в header */
+}
+
+.logo {
+  display: block;
+  margin: 0;
+  width: 80px;
+  height: 80px;
+}
