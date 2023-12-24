@@ -1,3 +1,5 @@
+@import '../../styles/mixes';
+
 .footer {
   max-width: 1560px;
   margin: 0 auto 50px;
@@ -15,42 +17,90 @@
     justify-content: space-between;
   }
 
+  &__column {
+    @include flex-container($dir: column, $align: flex-start, $just: space-between);
+
+    &_first {
+      min-height: 374px;
+    }
+
+    &_second {
+      min-height: 360px;
+    }
+
+    &_third {
+      justify-content: flex-start;
+    }
+
+    &_fourth {
+      justify-content: flex-start;
+    }
+  }
+
+  &__list {
+    @include flex-container($dir: column, $gap: 12px, $align: flex-start);
+    max-height: 340px;
+    column-gap: 30px;
+  }
+
+  &__list-element {
+    display: inline-block;
+    max-width: 400px;
+  }
+
+  &__text {
+    @include font-16(var(--dark-grey))
+  }
+
+  &__text-with-icon {
+    @include flex-container($just: flex-start);
+
+    &::before{
+      @include pse-icon;
+    }
+
+    &_rate{
+      &::before{
+        background-image: url(../../assets/icons/footer-icon/star-icon.svg);
+      }
+    }
+  }
+
+  &__column-title {
+    @include font-20;
+  }
+
+  &__logo-container{
+    margin-left: 25px;
+    margin-top: 22px;
+  }
+
+  &__group{
+    @include flex-container($dir: column, $gap: 30px, $align: flex-start);
+  }
+
+  &__group-contact {
+    @include flex-container($dir: column, $align: flex-start);
+  }
+
+  &__group-rate {
+    @include flex-container($gap: 30px, $align: flex-start, $dir: column)
+  }
+
+  &__btn-msg-dir {
+    @include font-16;
+
+    padding: 13px 23px;
+    box-sizing: border-box;
+
+    border-radius: 15px;
+    border: 1px solid var(--dark-grey);
+    box-shadow: 10px 15px 50px 0px rgba(173, 178, 201, 0.20);
+  }
+
   &__signature {
     padding: 25px 0;
     border-top: 1px solid #d9d9d9;
     color: var(--dark-grey);
   }
-
 }
-
-// .footer__column {
-// }
-
-// .footer__column_first {
-// }
-// .footer__column_second {
-// }
-// .footer__column_third {
-// }
-// .footer__column_fourth {
-// }
-
-// .footer__group-rate {
-// }
-// .footer__group-contact {
-// }
-
-
-// .footer__text-with-icon {
-// }
-// .footer__text-with-icon_rate {
-// }
-
-// .footer__btn-msg-dir {
-// }
-
-
-// .footer__column-title {
-// }
-// .footer__text {
-// }

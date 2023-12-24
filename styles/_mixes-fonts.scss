@@ -18,9 +18,12 @@
   font-size: 24px;
 }
 
-.font-20 {
-  font-weight: 500;
+@mixin font-20($color: var(--black)) {
   font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 24px */
+  color: $color;
 }
 
 @mixin font-18($color: var(--white))  {
