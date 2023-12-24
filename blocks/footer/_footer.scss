@@ -1,0 +1,56 @@
+.footer {
+  max-width: 1560px;
+  margin: 0 auto 50px;
+  padding: 60px 60px 0px;
+  box-sizing: border-box;
+
+  border-radius: 50px;
+  background: var(--grey);
+
+  &__content {
+    margin-bottom: 50px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__signature {
+    padding: 25px 0;
+    border-top: 1px solid #d9d9d9;
+    color: var(--dark-grey);
+  }
+
+}
+
+// .footer__column {
+// }
+
+// .footer__column_first {
+// }
+// .footer__column_second {
+// }
+// .footer__column_third {
+// }
+// .footer__column_fourth {
+// }
+
+// .footer__group-rate {
+// }
+// .footer__group-contact {
+// }
+
+
+// .footer__text-with-icon {
+// }
+// .footer__text-with-icon_rate {
+// }
+
+// .footer__btn-msg-dir {
+// }
+
+
+// .footer__column-title {
+// }
+// .footer__text {
+// }

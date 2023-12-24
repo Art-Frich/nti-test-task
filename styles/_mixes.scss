@@ -1,0 +1,33 @@
+@import './mixes-fonts';
+@import './mixes-css';
+
+@mixin flex-container($dir: row, $just: center, $gap: 15px, $align: center, $fw: wrap) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $just;
+  align-items: $align;
+  gap: $gap;
+  flex-wrap: $fw;
+}
+
+@mixin pse-icon($w: 24px, $h: 24px, $bs: contain, $bp: center, $disp: inline-block, $br: no-repeat){
+  content: "";
+  display: $disp;
+  width: $w;
+  height: $h;
+  background-repeat: $br;
+  background-position: $bp;
+  background-size: $bs;
+}
+
+@mixin img-btn( $mw: 50px, $mh: 50px, $brad: 10px, $bgrep: no-repeat,
+  $bgpos: center, $bgsize: 24px 24px, $bgcol: var(--pink)){
+
+  min-width: $mw;
+  min-height: $mh;
+  border-radius: $brad;
+  background-repeat: $bgrep;
+  background-position: $bgpos;
+  background-size: $bgsize;
+  background-color: $bgcol;
+}

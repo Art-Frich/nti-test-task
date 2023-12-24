@@ -1,0 +1,8 @@
+@import 'my-reset';
+@import 'normalize';
+@import url(../assets/fonts/Euclid_Circular_A/stylesheet.css);
+@import 'variables';
+@import 'mixes';
+
+@import '../blocks/header/header';
+@import '../blocks/footer/footer';
