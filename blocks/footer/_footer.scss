@@ -18,7 +18,7 @@
   }
 
   &__column {
-    @include flex-container($dir: column, $align: flex-start, $just: space-between);
+    @include flex-container($dir: column, $align: flex-start, $just: space-between, $gap: 12px);
 
     &_first {
       min-height: 374px;
@@ -38,18 +38,23 @@
   }
 
   &__list {
-    @include flex-container($dir: column, $gap: 12px, $align: flex-start);
-    max-height: 340px;
-    column-gap: 30px;
+    @include flex-container($dir: column, $gap: 12px, $align: flex-start, $fw: nowrap);
+
+    &_catalog1{
+      max-width: 272px;
+    }
+
+    &_catalog2{
+      max-width: 310px;
+    }
   }
 
   &__list-element {
     display: inline-block;
-    max-width: 400px;
   }
 
   &__text {
-    @include font-16(var(--dark-grey))
+    @include font-16(var(--dark-grey));
   }
 
   &__text-with-icon {
@@ -85,6 +90,10 @@
 
   &__group-rate {
     @include flex-container($gap: 30px, $align: flex-start, $dir: column)
+  }
+
+  &__catalog-group{
+    @include flex-container($align: flex-start, $gap: 30px);
   }
 
   &__btn-msg-dir {

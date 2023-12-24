@@ -792,7 +792,7 @@ template {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 15px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 .footer__column_first {
@@ -813,14 +813,16 @@ template {
   justify-content: center;
   align-items: flex-start;
   gap: 12px;
-  flex-wrap: wrap;
-  max-height: 340px;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  flex-wrap: nowrap;
+}
+.footer__list_catalog1 {
+  max-width: 272px;
+}
+.footer__list_catalog2 {
+  max-width: 310px;
 }
 .footer__list-element {
   display: inline-block;
-  max-width: 400px;
 }
 .footer__text {
   font-weight: 500;
@@ -879,6 +881,14 @@ template {
 .footer__group-rate {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.footer__catalog-group {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
