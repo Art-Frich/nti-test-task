@@ -1,5 +1,5 @@
 @import './mixes-fonts';
-@import './mixes-css';
+@import 'mixes-css';
 
 @mixin flex-container($dir: row, $just: center, $gap: 15px, $align: center, $fw: wrap) {
   display: flex;
@@ -30,4 +30,29 @@
   background-position: $bgpos;
   background-size: $bgsize;
   background-color: $bgcol;
+}
+
+@mixin btn-with-icon($mh: 60px, $p: 5px 5px 5px 20px, $br: 15px, $bgcolor: var(--button-gradient)){
+  @include font-18;
+  min-height: $mh;
+  padding: $p;
+  border-radius: $br;
+  background: $bgcolor;
+}
+
+@mixin content-btn-with-icon($w: 50px, $h: 50px, $ml: 13px, $url: url(../../assets/icons/shared-icon/btn-arrow-icon.svg)){
+  @include flex-container($gap: 0);
+
+  &::after {
+    @include pse-icon($w, $h);
+    margin-left: $ml;
+    background-image: $url;
+  }
+}
+
+@mixin category-item($p: 13px 24px, $br: 15px, $bgcolor: var(--grey)){
+  display: block;
+  padding: $p;
+  border-radius: $br;
+  background-color: $bgcolor;
 }

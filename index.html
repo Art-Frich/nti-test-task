@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!-- TODO: вынести все текстовые group в отдельный лист:
+  group group__text group__text_with-icon_icon group__text_color_color group_category group_header-nav group_footer-nav group_footer-catalog
+-->
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -11,13 +14,11 @@
       <div class="header__line header__line_first">
         <article class="header__group-geo">
           <button class="header__btn-geo btn">
-            <span
-              class="header__text-with-icon header__text-with-icon_location"
-            >
+            <span class="text-with-icon text-with-icon_location">
               Магазины
             </span>
           </button>
-          <span class="header__text-with-icon header__text-with-icon_email">
+          <span class="text-with-icon text-with-icon_email">
             info@kraskizdes.ru
           </span>
         </article>
@@ -56,21 +57,21 @@
         <ul class="header__group-links2">
           <li>
             <a
-              class="link header__text-with-icon header__text-with-icon_profile header__text-with-icon_column"
+              class="link text-with-icon text-with-icon_profile text-with-icon_column"
             >
               Войти
             </a>
           </li>
           <li>
             <a
-              class="link header__text-with-icon header__text-with-icon_favorite header__text-with-icon_column"
+              class="link text-with-icon text-with-icon_favorite text-with-icon_column"
             >
               Избранное
             </a>
           </li>
           <li>
             <a
-              class="link header__text-with-icon header__text-with-icon_basket header__text-with-icon_column"
+              class="link text-with-icon text-with-icon_basket text-with-icon_column"
             >
               Корзина
             </a>
@@ -78,53 +79,133 @@
         </ul>
       </div>
       <div class="header__line header__line_third">
-        <ul class="header__group-links3">
-          <li class="header__group-links3-element">
-            <a class="link header__text-with-icon header__text-with-icon_flame">
-              Акции
-            </a>
+        <ul class="group-links-category">
+          <li class="group-links-category__element">
+            <a class="link text-with-icon text-with-icon_flame">Акции</a>
           </li>
-          <li class="header__group-links3-element">
-            <a class="link header__text-with-icon header__text-with-icon_lable">
-              Бренды
-            </a>
+          <li class="group-links-category__element">
+            <a class="link text-with-icon text-with-icon_lable">Бренды</a>
           </li>
-          <li class="header__group-links3-element">
-            <a
-              class="link header__text-with-icon header__text-with-icon_diamond"
-            >
+          <li class="group-links-category__element">
+            <a class="link text-with-icon text-with-icon_diamond">
               Premium бренды
             </a>
           </li>
-          <li class="header__group-links3-element">
-            <a
-              class="link header__text-with-icon header__text-with-icon_payment"
-            >
+          <li class="group-links-category__element">
+            <a class="link text-with-icon text-with-icon_payment">
               Подбор по параметрам
             </a>
           </li>
-          <li class="header__group-links3-element">
-            <a class="link header__text-with-icon header__text-with-icon_color">
+          <li class="group-links-category__element">
+            <a class="link text-with-icon text-with-icon_color">
               Онлайн -колеровка
             </a>
           </li>
-          <li class="header__group-links3-element">
-            <a
-              class="link header__text-with-icon header__text-with-icon_megaphone"
-            >
+          <li class="group-links-category__element">
+            <a class="link text-with-icon text-with-icon_megaphone">
               Новости компании
             </a>
           </li>
         </ul>
         <button class="header__btn-phone btn">
-          <span class="header__text-with-icon header__text-with-icon_phone">
+          <span class="text-with-icon text-with-icon_phone">
             8 (495) 120-81-55
           </span>
         </button>
       </div>
     </header>
 
-    <main class="main"></main>
+    <main class="main">
+      <section class="slider">Слайдер</section>
+
+      <div class="main__equal-gap">
+        <section class="section">
+          <div class="section__card-list">
+            <article class="service btn">
+              <img
+                class="service__img"
+                src="./assets/images/services/life-buoy.svg"
+                alt="Графическое изображение средства спасения в виде надувного круга, символизирующее профессиональный подбор цвета"
+              />
+              <div class="service__column">
+                <p class="service__title">Профессиональный подбор цвета</p>
+                <span class="service__title">
+                  Отвечаем на вопросы покупателей в течение 10 минут
+                </span>
+              </div>
+            </article>
+            <article class="service btn">
+              <img
+                class="service__img"
+                src="./assets/images/services/glass.svg"
+                alt="Графическое изображение средства спасения в виде надувного круга, символизирующее профессиональный подбор цвета"
+              />
+              <div class="service__column">
+                <p class="service__title">Широкий выбор красок</p>
+                <span class="service__title">
+                  Дарим подарки и скидки до 70% всем покупателям
+                </span>
+              </div>
+            </article>
+            <article class="service btn">
+              <img
+                class="service__img"
+                src="./assets/images/services/coin.svg"
+                alt="Графическое изображение средства спасения в виде надувного круга, символизирующее профессиональный подбор цвета"
+              />
+              <div class="service__column">
+                <p class="service__title">Гарантия качества продукции</p>
+                <span class="service__title">
+                  Соответствуем требованиям и стандартам качества
+                </span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__header">
+            <p class="section__title">Популярные категории</p>
+            <button class="section__btn-with-icon btn">
+              <span class="section__btn-with-icon-text">Все категории</span>
+            </button>
+          </div>
+          <ul class="group-links-category">
+            <li class="group-links-category__element">
+              <button class="link text-with-icon text-with-icon_flame">
+                Акции
+              </button>
+            </li>
+            <li class="group-links-category__element">
+              <button class="link text-with-icon">Для внутренних работ</button>
+            </li>
+            <li class="group-links-category__element">
+              <button class="link text-with-icon">Для внутренних работ</button>
+            </li>
+            <li class="group-links-category__element">
+              <button class="link text-with-icon">Подбор по</button>
+            </li>
+            <li class="group-links-category__element">
+              <button class="link text-with-icon">Онлайн -</button>
+            </li>
+            <li class="group-links-category__element">
+              <button class="link text-with-icon">Новости</button>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <div class="section__header">
+            <p class="section__title">Скидки</p>
+            <button class="section__btn-with-icon btn">
+              <span class="section__btn-with-icon-text">Все скидки</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="form-contact">Форма</section>
+      </div>
+    </main>
 
     <footer class="footer">
       <div class="footer__content">

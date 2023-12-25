@@ -1,6 +1,5 @@
-@import '../../styles/mixes';
-
 .header {
+  margin-bottom: 72px;
 
 /* Линии */
   &__line {
@@ -38,18 +37,6 @@
   &__group-links2 {
     @include flex-container($gap: 30px)
   }
-
-  &__group-links3 {
-    @include flex-container;
-  }
-
-  &__group-links3-element {
-    display: block;
-    padding: 13px 24px;
-    border-radius: 15px;
-    background-color: var(--grey);
-  }
-
   &__searcher {
     @include flex-container($just: space-between);
     flex-grow: 4;
@@ -72,21 +59,11 @@
   }
 
   &__btn-catalog {
-    @include font-18;
-    min-height: 60px;
-    padding: 5px 5px 5px 20px;
-    border-radius: 15px;
-    background: var(--pink);
+    @include btn-with-icon($bgcolor: var(--pink));
   }
 
   &__btn-catalog-text {
-    @include flex-container($gap: 0);
-
-    &::after {
-      @include pse-icon(50px,50px);
-      margin-left: 13px;
-      background-image: url(../../assets/icons/header-icon/list-icon.svg);
-    }
+    @include  content-btn-with-icon($url: url(../../assets/icons/header-icon/list-icon.svg));
   }
 
   &__btn-phone {
@@ -95,121 +72,5 @@
     padding: 13px 24px;
     background: var(--pink);
     box-shadow: 10px 15px 50px 0px rgba(173, 178, 201, 0.2);
-  }
-
-  /* текст */
-  &__text-with-icon {
-    @include font-16;
-    display: flex;
-    align-items: center;
-
-    &_column {
-      @include font-18(var(--black));
-      flex-direction: column;
-      position: relative;
-
-      &::after {
-        @include small-text;
-        @include flex-container;
-        position: absolute;
-        /* 50% - a - b, a - размер блока, b - смещение от центра */
-        right: calc(50% - 22px - 4px);
-
-        width: 22px;
-        height: 22px;
-        background-color: var(--pink);
-        border-radius: 50%;
-      }
-    }
-
-    &::before {
-      @include pse-icon;
-      margin-right: 5px;
-    }
-
-    &_location{
-      &::before {
-        background-image: url(../../assets/icons/header-icon/location-icon.svg);
-      }
-    }
-
-    &_email{
-      &::before {
-        background-image: url(../../assets/icons/header-icon/email-icon.svg);
-      }
-    }
-
-    &_profile{
-      &::before {
-        background-image: url(../../assets/icons/header-icon/profile-icon.svg);
-      }
-    }
-
-    &_favorite{
-      &::before {
-        background-image: url(../../assets/icons/header-icon/favorite-icon.svg);
-      }
-      &::after {
-        content: "7";
-      }
-    }
-
-    &_basket{
-      &::before {
-        background-image: url(../../assets/icons/header-icon/basket-icon.svg);
-      }
-      &::after {
-        content: "4";
-      }
-    }
-
-    &_flame{
-      &::before {
-        background-image: url(../../assets/icons/header-icon/flame-icon.svg);
-      }
-    }
-
-    &_lable{
-      &::before {
-        background-image: url(../../assets/icons/header-icon/lable-icon.svg);
-      }
-    }
-
-    &_diamond{
-      &::before {
-        background-image: url(../../assets/icons/header-icon/diamond-icon.svg);
-      }
-    }
-
-    &_payment{
-      &::before {
-        background-image: url(../../assets/icons/header-icon/payment-icon.svg);
-      }
-    }
-
-    &_color{
-      &::before {
-        background-image: url(../../assets/icons/header-icon/color-icon.svg);
-      }
-    }
-
-    &_megaphone{
-      &::before {
-        background-image: url(../../assets/icons/header-icon/megaphone-icon.svg);
-      }
-    }
-
-    &_phone{
-      &::before {
-        background-image: url(../../assets/icons/header-icon/phone-icon.svg);
-      }
-    }
-
-    &_location{
-      &::before {
-        background-image: url(../../assets/icons/header-icon/location-icon.svg);
-      }
-    }
-
   }
 }

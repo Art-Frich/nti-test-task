@@ -3,9 +3,12 @@
   font-size: 70px;
 }
 
-.font-h2 {
-  font-weight: 500;
+@mixin font-h2($color: var(--black)) {
+  color: $color;
   font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .font-h3 {
@@ -13,9 +16,12 @@
   font-size: 38px;
 }
 
-.font-h4 {
+@mixin font-h4($color: var(--black)) {
   font-weight: 600;
   font-size: 24px;
+  color: $color;
+  font-style: normal;
+  line-height: normal;
 }
 
 @mixin font-20($color: var(--black)) {

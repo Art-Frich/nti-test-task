@@ -1,0 +1,33 @@
+.service {
+  @include flex-container($gap: 80px);
+
+  padding: 40px 40px 40px 30px;
+  border-radius: 20px;
+  background-color: var(--purple-light);
+  box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.25);
+  background-image: url(../../assets/images/services/card-bg.svg);
+  background-position: left;
+}
+
+.service__img {
+  display: block;
+  margin: 0;
+
+  width: 100px;
+  height: 100px;
+
+  margin-bottom: 16px;
+}
+
+.service__column {
+  @include flex-container($dir: column, $align: flex-start);
+  max-width: 256px;
+}
+
+.service__title {
+  @include font-h4;
+}
+
+.service__title {
+  @include font-16(var(--dark-grey));
+}

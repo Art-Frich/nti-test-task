@@ -1,0 +1,113 @@
+.text-with-icon {
+  @include font-16;
+  display: flex;
+  align-items: center;
+
+  &_column {
+    @include font-18(var(--black));
+    flex-direction: column;
+    position: relative;
+
+    &::after {
+      @include small-text;
+      @include flex-container;
+      position: absolute;
+      /* 50% - a - b, a - размер блока, b - смещение от центра */
+      right: calc(50% - 22px - 4px);
+
+      width: 22px;
+      height: 22px;
+      background-color: var(--pink);
+      border-radius: 50%;
+    }
+  }
+
+  &::before {
+    @include pse-icon;
+    margin-right: 5px;
+  }
+
+  &_location{
+    &::before {
+      background-image: url(../../assets/icons/header-icon/location-icon.svg);
+    }
+  }
+
+  &_email{
+    &::before {
+      background-image: url(../../assets/icons/header-icon/email-icon.svg);
+    }
+  }
+
+  &_profile{
+    &::before {
+      background-image: url(../../assets/icons/header-icon/profile-icon.svg);
+    }
+  }
+
+  &_favorite{
+    &::before {
+      background-image: url(../../assets/icons/header-icon/favorite-icon.svg);
+    }
+    &::after {
+      content: "7";
+    }
+  }
+
+  &_basket{
+    &::before {
+      background-image: url(../../assets/icons/header-icon/basket-icon.svg);
+    }
+    &::after {
+      content: "4";
+    }
+  }
+
+  &_flame{
+    &::before {
+      background-image: url(../../assets/icons/header-icon/flame-icon.svg);
+    }
+  }
+
+  &_lable{
+    &::before {
+      background-image: url(../../assets/icons/header-icon/lable-icon.svg);
+    }
+  }
+
+  &_diamond{
+    &::before {
+      background-image: url(../../assets/icons/header-icon/diamond-icon.svg);
+    }
+  }
+
+  &_payment{
+    &::before {
+      background-image: url(../../assets/icons/header-icon/payment-icon.svg);
+    }
+  }
+
+  &_color{
+    &::before {
+      background-image: url(../../assets/icons/header-icon/color-icon.svg);
+    }
+  }
+
+  &_megaphone{
+    &::before {
+      background-image: url(../../assets/icons/header-icon/megaphone-icon.svg);
+    }
+  }
+
+  &_phone{
+    &::before {
+      background-image: url(../../assets/icons/header-icon/phone-icon.svg);
+    }
+  }
+
+  &_location{
+    &::before {
+      background-image: url(../../assets/icons/header-icon/location-icon.svg);
+    }
+  }
+}

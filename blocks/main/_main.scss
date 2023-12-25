@@ -1,0 +1,10 @@
+$equal-gap: 152px;
+
+.main{
+  @include flex-container($gap: 80px, $dir: column);
+  margin-bottom: $equal-gap;
+
+  &__equal-gap{
+    @include flex-container($gap: $equal-gap, $dir: column);
+  }
+}
