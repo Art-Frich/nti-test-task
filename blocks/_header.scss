@@ -23,20 +23,29 @@
 
 /* группы */
   &__group-geo {
-    @include flex-container($gap: 40px)
+    @include flex-container($gap: 40px);
   }
 
-  &__group-links1 {
-    @include flex-container($gap: 30px)
+  &__group-nav {
+    @include flex-container($gap: 30px);
+
+    &-element{
+      @include font-16;
+    }
   }
 
-  &__group-links1-element{
-    @include font-16;
+  &__group-pages {
+    @include flex-container($gap: 30px);
   }
 
-  &__group-links2 {
-    @include flex-container($gap: 30px)
+  &__group-category {
+    @include flex-container;
+
+    &-element {
+      @include category-item;
+    }
   }
+
   &__searcher {
     @include flex-container($just: space-between);
     flex-grow: 4;

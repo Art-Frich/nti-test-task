@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<!-- TODO: вынести все текстовые group в отдельный лист:
-  group group__text group__text_with-icon_icon group__text_color_color group_category group_header-nav group_footer-nav group_footer-catalog
--->
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -23,23 +20,23 @@
           </span>
         </article>
         <nav>
-          <ul class="header__group-links1">
-            <li class="header__group-links1-element">
+          <ul class="header__group-nav">
+            <li class="header__group-nav-element">
               <a class="link" href="#">Доставка</a>
             </li>
-            <li class="header__group-links1-element">
+            <li class="header__group-nav-element">
               <a class="link" href="#">Оплата</a>
             </li>
-            <li class="header__group-links1-element">
+            <li class="header__group-nav-element">
               <a class="link" href="#">Возврат</a>
             </li>
-            <li class="header__group-links1-element">
+            <li class="header__group-nav-element">
               <a class="link" href="#">Помощь</a>
             </li>
-            <li class="header__group-links1-element">
+            <li class="header__group-nav-element">
               <a class="link" href="#">О нас</a>
             </li>
-            <li class="header__group-links1-element">
+            <li class="header__group-nav-element">
               <a class="link" href="#">Для бизнеса</a>
             </li>
           </ul>
@@ -54,7 +51,7 @@
           <input placeholder="Искать товары" class="header__searcher-input" />
           <button class="header__searcher-btn btn" type="submit"></button>
         </form>
-        <ul class="header__group-links2">
+        <ul class="header__group-pages">
           <li>
             <a
               class="link text-with-icon text-with-icon_profile text-with-icon_column"
@@ -79,30 +76,44 @@
         </ul>
       </div>
       <div class="header__line header__line_third">
-        <ul class="group-links-category">
-          <li class="group-links-category__element">
-            <a class="link text-with-icon text-with-icon_flame">Акции</a>
+        <ul class="header__group-category">
+          <li>
+            <a
+              class="link text-with-icon text-with-icon_flame header__group-category-element"
+              >Акции</a
+            >
           </li>
-          <li class="group-links-category__element">
-            <a class="link text-with-icon text-with-icon_lable">Бренды</a>
+          <li>
+            <a
+              class="link text-with-icon text-with-icon_lable header__group-category-element"
+              >Бренды</a
+            >
           </li>
-          <li class="group-links-category__element">
-            <a class="link text-with-icon text-with-icon_diamond">
+          <li>
+            <a
+              class="link text-with-icon text-with-icon_diamond header__group-category-element"
+            >
               Premium бренды
             </a>
           </li>
-          <li class="group-links-category__element">
-            <a class="link text-with-icon text-with-icon_payment">
+          <li>
+            <a
+              class="link text-with-icon text-with-icon_payment header__group-category-element"
+            >
               Подбор по параметрам
             </a>
           </li>
-          <li class="group-links-category__element">
-            <a class="link text-with-icon text-with-icon_color">
-              Онлайн -колеровка
+          <li>
+            <a
+              class="link text-with-icon text-with-icon_color header__group-category-element"
+            >
+              Онлайн-колеровка
             </a>
           </li>
-          <li class="group-links-category__element">
-            <a class="link text-with-icon text-with-icon_megaphone">
+          <li>
+            <a
+              class="link text-with-icon text-with-icon_megaphone header__group-category-element"
+            >
               Новости компании
             </a>
           </li>
@@ -129,7 +140,7 @@
               />
               <div class="service__column">
                 <p class="service__title">Профессиональный подбор цвета</p>
-                <span class="service__title">
+                <span class="service__subtitle">
                   Отвечаем на вопросы покупателей в течение 10 минут
                 </span>
               </div>
@@ -142,7 +153,7 @@
               />
               <div class="service__column">
                 <p class="service__title">Широкий выбор красок</p>
-                <span class="service__title">
+                <span class="service__subtitle">
                   Дарим подарки и скидки до 70% всем покупателям
                 </span>
               </div>
@@ -155,7 +166,7 @@
               />
               <div class="service__column">
                 <p class="service__title">Гарантия качества продукции</p>
-                <span class="service__title">
+                <span class="service__subtitle">
                   Соответствуем требованиям и стандартам качества
                 </span>
               </div>
@@ -163,33 +174,109 @@
           </div>
         </section>
 
-        <section class="section">
+        <section class="section popular">
           <div class="section__header">
             <p class="section__title">Популярные категории</p>
             <button class="section__btn-with-icon btn">
               <span class="section__btn-with-icon-text">Все категории</span>
             </button>
           </div>
-          <ul class="group-links-category">
-            <li class="group-links-category__element">
-              <button class="link text-with-icon text-with-icon_flame">
+          <ul class="popular__group-category">
+            <li class="popular__group-category-element">
+              <button class="btn popular__text popular__text_icon_flame">
                 Акции
               </button>
             </li>
-            <li class="group-links-category__element">
-              <button class="link text-with-icon">Для внутренних работ</button>
+            <li
+              class="popular__group-category-element popular__group-category-element_active"
+            >
+              <button class="btn popular__text">Для внутренних работ</button>
             </li>
-            <li class="group-links-category__element">
-              <button class="link text-with-icon">Для внутренних работ</button>
+            <li class="popular__group-category-element">
+              <button class="btn popular__text">Для наружных работ</button>
             </li>
-            <li class="group-links-category__element">
-              <button class="link text-with-icon">Подбор по</button>
+            <li class="popular__group-category-element">
+              <button class="btn popular__text">Универсальные</button>
             </li>
-            <li class="group-links-category__element">
-              <button class="link text-with-icon">Онлайн -</button>
+            <li class="popular__group-category-element">
+              <button class="btn popular__text">Специального назначения</button>
             </li>
-            <li class="group-links-category__element">
-              <button class="link text-with-icon">Новости</button>
+            <li class="popular__group-category-element">
+              <button class="btn popular__text">Грунтовки</button>
+            </li>
+            <li class="popular__group-category-element">
+              <button class="btn popular__text">Специального назначения</button>
+            </li>
+            <li class="popular__group-category-element">
+              <button class="btn popular__text">Специального назначения</button>
+            </li>
+          </ul>
+          <ul class="popular__group-subcategory">
+            <li
+              class="popular__group-subcategory-element popular__group-subcategory-element_for-walls"
+            >
+              <button class="popular__subcategory-btn btn">
+                <div class="popular__subcategory-btn-column">
+                  <p class="popular__subcategory-title">Краски для стен</p>
+                  <p class="popular__text popular__text_opacity">
+                    500+ товаров
+                  </p>
+                </div>
+                <img
+                  src="./assets/icons/shared-icon/arrow-right.svg"
+                  class="popular__subcategory-btn-icon"
+                />
+              </button>
+            </li>
+            <li
+              class="popular__group-subcategory-element popular__group-subcategory-element_for-ceiling"
+            >
+              <button class="popular__subcategory-btn btn">
+                <div class="popular__subcategory-btn-column">
+                  <p class="popular__subcategory-title">Краски для потолка</p>
+                  <p class="popular__text popular__text_opacity">
+                    500+ товаров
+                  </p>
+                </div>
+                <img
+                  src="./assets/icons/shared-icon/arrow-right.svg"
+                  class="popular__subcategory-btn-icon"
+                />
+              </button>
+            </li>
+            <li
+              class="popular__group-subcategory-element popular__group-subcategory-element_for-bathroom"
+            >
+              <button class="popular__subcategory-btn btn">
+                <div class="popular__subcategory-btn-column">
+                  <p class="popular__subcategory-title">
+                    Краски для кухни и ванной
+                  </p>
+                  <p class="popular__text popular__text_opacity">
+                    500+ товаров
+                  </p>
+                </div>
+                <img
+                  src="./assets/icons/shared-icon/arrow-right.svg"
+                  class="popular__subcategory-btn-icon"
+                />
+              </button>
+            </li>
+            <li
+              class="popular__group-subcategory-element popular__group-subcategory-element_for-floor"
+            >
+              <button class="popular__subcategory-btn btn">
+                <div class="popular__subcategory-btn-column">
+                  <p class="popular__subcategory-title">Краски для пола</p>
+                  <p class="popular__text popular__text_opacity">
+                    500+ товаров
+                  </p>
+                </div>
+                <img
+                  src="./assets/icons/shared-icon/arrow-right.svg"
+                  class="popular__subcategory-btn-icon"
+                />
+              </button>
             </li>
           </ul>
         </section>
@@ -235,9 +322,15 @@
               <p class="footer__column-title">Электронная почта</p>
               <p class="footer__text">info@kraskizdes.ru</p>
             </div>
-            <div>
-              <img src="./assets/icons/footer-icon/vk-icon.svg" />
-              <img src="./assets/icons/footer-icon/youtube-icon.svg" />
+            <div class="footer__group-social">
+              <img
+                src="./assets/icons/footer-icon/vk-icon.svg"
+                class="btn footer__group-social-element"
+              />
+              <img
+                src="./assets/icons/footer-icon/youtube-icon.svg"
+                class="btn footer__group-social-element"
+              />
             </div>
           </div>
           <img src="./assets/icons/footer-icon/pay-icons.svg" />
@@ -307,7 +400,7 @@
                 Морилки по дереву
               </li>
               <li class="footer__text footer__list-element">
-                Стеклообои, малярный флизелин, обои под покраску
+                Стекло обои, малярный флизелин, обои под покраску
               </li>
               <li class="footer__text footer__list-element">
                 Каталоги цветов, колеровочные карты

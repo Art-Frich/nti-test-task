@@ -2,11 +2,17 @@
   width: 100%;
 
   &__card-list{
-    @include flex-container($gap: 20px);
+    @include grid-containter;
+
+    @media screen and (max-width: 545px) {
+      gap: 16px;
+      grid-template-rows: 137px 137px 137px;
+    }
   }
 
   &__header {
     @include flex-container($just: space-between);
+    margin-bottom: 60px;
   }
 
   &__title {

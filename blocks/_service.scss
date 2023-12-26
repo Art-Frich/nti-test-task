@@ -1,5 +1,5 @@
 .service {
-  @include flex-container($gap: 80px);
+  @include flex-container($gap: 80px, $fw: nowrap);
 
   padding: 40px 40px 40px 30px;
   border-radius: 20px;
@@ -7,6 +7,16 @@
   box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.25);
   background-image: url(../../assets/images/services/card-bg.svg);
   background-position: left;
+
+  @media screen and (max-width: 1700px) {
+    gap: 30px;
+    padding: 30px;
+  }
+
+  @media screen and (max-width: 545px) {
+    gap: 29px;
+    padding: 25.5px 5px;
+  }
 }
 
 .service__img {
@@ -17,6 +27,11 @@
   height: 100px;
 
   margin-bottom: 16px;
+
+  @media screen and (max-width: 545px) {
+    width: 86px;
+    height: 86px;
+  }
 }
 
 .service__column {
@@ -26,8 +41,15 @@
 
 .service__title {
   @include font-h4;
+
+  @media screen and (max-width: 545px) {
+    font-size: 18px;
+  }
 }
 
-.service__title {
+.service__subtitle {
   @include font-16(var(--dark-grey));
+  @media screen and (max-width: 545px) {
+    font-size: 12px;
+  }
 }

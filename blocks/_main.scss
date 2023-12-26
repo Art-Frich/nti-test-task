@@ -1,0 +1,24 @@
+$equal-gap: 152px;
+
+.main{
+  width: 100%;
+  max-width: 1560px;
+  margin: auto;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1700px) {
+    padding: 0 30px;
+  }
+
+  @media screen and (max-width: 545px) {
+    padding: 10px;
+  }
+
+  @include flex-container($gap: 80px, $dir: column);
+  margin-bottom: $equal-gap;
+
+  &__equal-gap{
+    width: 100%;
+    @include flex-container($gap: $equal-gap, $dir: column);
+  }
+}

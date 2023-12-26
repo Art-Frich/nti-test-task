@@ -1,0 +1,37 @@
+
+.group{
+  @include flex-container;
+
+  &_category{
+
+  }
+
+  &_header-nav{
+
+  }
+
+  &_footer-nav{
+
+  }
+
+  &_footer-catalog{
+
+  }
+
+  &__text{
+
+    &_color{
+      &_color{
+
+      }
+    }
+  }
+
+  &__text_with-icon{
+
+    &_icon{
+
+    }
+
+  }
+}

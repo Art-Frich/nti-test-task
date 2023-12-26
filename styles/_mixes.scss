@@ -10,6 +10,14 @@
   flex-wrap: $fw;
 }
 
+@mixin grid-containter($gap: 20px, $minw: 355px, $maxw: 506px, $minh: 137px, $maxh: 196px){
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($minw, $maxw));
+  grid-template-rows: minmax($minh, $maxh);
+  justify-content: center;
+  gap: $gap;
+}
+
 @mixin pse-icon($w: 24px, $h: 24px, $bs: contain, $bp: center, $disp: inline-block, $br: no-repeat){
   content: "";
   display: $disp;
@@ -56,3 +64,4 @@
   border-radius: $br;
   background-color: $bgcolor;
 }
+

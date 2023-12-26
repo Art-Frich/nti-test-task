@@ -57,6 +57,7 @@
 
   &__text-with-icon {
     @include flex-container($just: flex-start);
+    cursor: pointer;
 
     &::before{
       @include pse-icon;
@@ -88,6 +89,14 @@
 
   &__group-rate {
     @include flex-container($gap: 30px, $align: flex-start, $dir: column)
+  }
+
+  &__group-social {
+    @include flex-container;
+  }
+
+  &__group-social-element {
+    cursor: pointer;
   }
 
   &__catalog-group{

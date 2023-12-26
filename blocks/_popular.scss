@@ -1,0 +1,136 @@
+.popular{
+  &__group-category{
+    @include flex-container($fw: nowrap, $just: flex-start);
+    margin-bottom: 30px;
+
+    overflow-x: hidden;
+    position: relative;
+
+    &::after{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 41px;
+      height: 50px;
+      background: linear-gradient(270deg, #FFF 36.76%, rgba(255, 255, 255, 0.00) 99.93%);
+      outline: 1px solid green($color: #000000);
+
+    }
+
+    &-element{
+      @include category-item;
+      transition: color .2s linear, background-color .2s linear;
+
+      &_active{
+        color: var(--white);
+        background-color: var(--pink);
+      }
+    }
+
+
+  }
+
+  &__group-subcategory {
+    $minh: 260px;
+    $maxh: 387px;
+
+    @include grid-containter($minw: 173px, $maxw: 375px, $minh: $minh, $maxh: $maxh);
+
+    @media screen and (max-width: 1700px) {
+      grid-template-rows: repeat(2, minmax($minh, $maxh));
+    }
+
+    @media screen and (max-width: 850px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(2, $minh);
+      gap: 10px;
+    }
+
+    &-element{
+      @include flex-container($align: flex-end);
+      padding: 15px;
+      border-radius: 30px;
+
+      @media screen and (max-width: 850px) {
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+      }
+
+      &_for-walls{
+        background-image: url(../assets/images/popular-category/for-walls.png)
+      }
+
+      &_for-ceiling{
+        background-image: url(../assets/images/popular-category/for-ceiling.png)
+      }
+
+      &_for-bathroom{
+        background-image: url(../assets/images/popular-category/for-bathroom.png)
+      }
+
+      &_for-floor{
+        background-image: url(../assets/images/popular-category/for-floor.png)
+      }
+    }
+  }
+
+  &__subcategory-btn {
+    @include flex-container($just: space-between, $gap: 0);
+    width: 100%;
+    padding: 12px 17px 12px 20px;
+
+    border-radius: 20px;
+    border: 1px solid var(--white);
+    background: rgba(244, 246, 248, 0.50);
+    backdrop-filter: blur(6px);
+
+    @media screen and (max-width: 850px) {
+      padding: 10px;
+      gap: 2px;
+    }
+
+    &-icon{
+      width: 24px;
+      height: 24px;
+    }
+
+    &-column{
+      @include flex-container($dir: column, $gap: 2px, $align: flex-start)
+    }
+  }
+
+  &__subcategory-title {
+    @include font-20;
+
+    @media screen and (max-width: 850px) {
+      font-size: 15px;
+    }
+  }
+
+  &__text{
+    @include font-16;
+    text-wrap: nowrap;
+
+    &_opacity {
+      opacity: 0.6;
+
+      @media screen and (max-width: 850px) {
+        font-size: 14px;
+      }
+    }
+
+    &_icon_flame{
+      display: flex;
+      align-items: center;
+
+      &::before {
+        @include pse-icon;
+        margin-right: 5px;
+        background-image: url(../../assets/icons/header-icon/flame-icon.svg);
+      }
+
+    }
+  }
+}

@@ -1,9 +1,0 @@
-.group-links-category {
-  @include flex-container;
-
-  &__element {
-    @include category-item;
-  }
-}
-
-
