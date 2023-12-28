@@ -41,7 +41,7 @@
       grid-template-rows: repeat(2, minmax($minh, $maxh));
     }
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 860px) {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(2, $minh);
       gap: 10px;
@@ -52,7 +52,7 @@
       padding: 15px;
       border-radius: 30px;
 
-      @media screen and (max-width: 850px) {
+      @media screen and (max-width: 860px) {
         background-position: center;
         background-size: cover;
         padding: 10px;
@@ -86,7 +86,7 @@
     background: rgba(244, 246, 248, 0.50);
     backdrop-filter: blur(6px);
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 860px) {
       padding: 10px;
       gap: 2px;
     }
@@ -104,7 +104,7 @@
   &__subcategory-title {
     @include font-20;
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 860px) {
       font-size: 15px;
     }
   }
@@ -116,7 +116,7 @@
     &_opacity {
       opacity: 0.6;
 
-      @media screen and (max-width: 850px) {
+      @media screen and (max-width: 860px) {
         font-size: 14px;
       }
     }

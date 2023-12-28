@@ -1,0 +1,80 @@
+.form {
+  @include flex-container($dir: column, $gap: 0, $just: space-between, $align: stretch);
+  padding: 0 125px;
+
+  $pad-left: 25px;
+  $max-w: 513px;
+
+  &__title {
+    @include font-h2;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    @include font-16(var(--dark-grey));
+    margin-bottom: 40px;
+  }
+
+  &__input-container {
+    @include flex-container($gap: 2px, $dir: column, $align: flex-start);
+
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+
+  &__input {
+    @include font-16;
+
+    flex-grow: 4;
+
+    &::placeholder{
+      color: var(--dark-grey);
+    }
+  }
+
+  &__input-block{
+    @include flex-container($just: flex-start, $gap: 6px);
+
+    position: relative;
+
+    max-width: $max-w;
+    width: 100%;
+    padding: 17px $pad-left;
+    box-sizing: border-box;
+
+    border-radius: 15px;
+    border: 1px solid var(--pink);
+
+    &::before{
+      @include pse-icon;
+    }
+
+    &_profile{
+      &::before{
+        background-image: url(../assets/icons/shared-icon/profile-icon.svg);
+      }
+    }
+
+    &_phone{
+      &::before{
+        background-image: url(../assets/icons/shared-icon/phone-icon.svg);
+      }
+    }
+  }
+
+  &__input-err {
+    @include small-text(var(--pink));
+    padding-left: $pad-left;
+  }
+
+  &__submit-line {
+    @include flex-container($just: space-between, $gap: 0);
+    max-width: $max-w;
+  }
+
+  &__submit-text {
+    @include small-text(var(--dark-grey));
+    max-width: 267px;
+  }
+}

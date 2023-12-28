@@ -1,5 +1,50 @@
 .section{
+  $b-rad: 50px;
+
   width: 100%;
+
+  &_form{
+    @include flex-container($gap: 0, $just: space-between);
+
+    border-radius: $b-rad;
+    border: 2px solid var(--purple-light);
+    background: var(--purple-light);
+  }
+
+  &__img-container {
+    max-width: 650px;
+    max-height: 497px;
+    width: 100%;
+    height: 100%;
+
+    border-radius: $b-rad;
+    position: relative;
+
+
+    &::after{
+      content: '';
+      position: absolute;
+      right: -103px;
+      bottom: 0;
+      top:0;
+      left: 0px;
+      z-index: 1;
+
+      border-radius: 40px;
+      background: linear-gradient(303deg, rgba(255, 255, 255, 0.27) 26.33%, #FDFCFF 50.99%);
+    }
+  }
+
+  &__img{
+    display: block;
+    margin: 0;
+
+    border-radius: $b-rad;
+    position: relative;
+    z-index: 2;
+
+    filter: drop-shadow(12px 25px 54px rgba(126, 117, 178, 0.25));
+  }
 
   &__card-list{
     @include grid-containter;
@@ -25,5 +70,24 @@
 
   &__btn-with-icon-text {
     @include content-btn-with-icon($ml: 25px);
+  }
+
+  &__content-list {
+    $minh: 262px;
+    $maxh: 422px;
+
+    @include grid-containter($minw: 173px, $maxw: 375px, $minh: $minh, $maxh: $maxh);
+
+    &_discounts {
+      @media screen and (max-width: 1700px) {
+        grid-template-rows: repeat(2, minmax($minh, $maxh));
+      }
+
+      @media screen and (max-width: 860px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, $minh);
+        column-gap: 9px;
+      }
+    }
   }
 }

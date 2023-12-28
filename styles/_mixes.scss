@@ -28,12 +28,14 @@
   background-size: $bs;
 }
 
-@mixin img-btn( $mw: 50px, $mh: 50px, $brad: 10px, $bgrep: no-repeat,
+@mixin img-btn( $mw: 50px, $mh: 50px, $b-rad: 10px, $bgrep: no-repeat,
   $bgpos: center, $bgsize: 24px 24px, $bgcol: var(--pink)){
 
-  min-width: $mw;
-  min-height: $mh;
-  border-radius: $brad;
+  max-width: $mw;
+  max-height: $mh;
+  height: 100%;
+  width: 100%;
+  border-radius: $b-rad;
   background-repeat: $bgrep;
   background-position: $bgpos;
   background-size: $bgsize;
